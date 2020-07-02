@@ -22,13 +22,13 @@ def api_sub():
 def api_mul():
     num1 = int(request.args["num1"])
     num2 = int(request.args["num2"])
-    return jsonify({"operation":"subtraction","Result":num1*num2})
+    return jsonify({"operation":"multiplication","Result":num1*num2})
 
 @app.route("/api.calculator.com/divide",methods=['GET'])
 def api_div():
     num1 = float(request.args["num1"])
     num2 = float(request.args["num2"])
-    return jsonify({"operation":"subtraction","Result":num1/num2})
+    return jsonify({"operation":"division","Result":num1/num2})
 
 
 if(__name__=="__main__"):
